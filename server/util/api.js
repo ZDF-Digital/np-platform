@@ -11,7 +11,7 @@ const cors = require('cors')({origin: true})
 function handleApiRequest(req, res, components) {
     const contentType = req.headers['content-type'] || '';
 
-    console.log('api request', req.method, req.path, contentType);
+    console.log('api request [zdfd1]', req.method, req.path, contentType);
     if (req.method == 'OPTIONS') {
         cors(req, res, () => {
             res.status(200);
